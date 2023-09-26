@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/399ae45b84.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Ping coming soon page</title>
+</head>
+<body>
+  <header>
+    <img class="logo-img" src="images/logo.svg" alt="">
+    <h1>We are launching <span>soon!</span></h1>
+    <p>Subscribe and get notified</p>
+  </header>
+  <main>
+    <form class="form">
+      <input class="email-input" type="text" aria-describedby="error-text" placeholder="Your email address...">
+      <label class="visually-hidden" for="email-input">Email Address</label>
+      <p class="error-text hidden" id="error-text"></p>
+      <button class="button" type="submit">Notify Me</button>
+    </form>
+    <div class="confirmation hidden">Thanks for signing up!</div>
+    <img class="dashboard-img" src="images/illustration-dashboard.png" alt="">
+  </main>
+  <footer>
+    <div class="socials">
+      <a href="#" aria-label="Facebook"><span class="fab fa-facebook-f"></span></a>
+      <a href="#" aria-label="Twitter"><span class="fab fa-twitter"></span></a>
+      <a href="#" aria-label="Instagram"><span class="fab fa-instagram"></span></a>
+    </div>
+    <p>&copy; Copyright Ping. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
