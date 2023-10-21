@@ -1,13 +1,13 @@
 const form = document.querySelector(".form");
-const emailInput = document.querySelector(".email-input");
+const input = document.querySelector(".input");
 const errorText = document.querySelector(".error-text");
 const confirmation = document.querySelector(".confirmation");
 
 function validate() {
   const emailFormat = /^\w+([\.-]?\w+)a*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   
-  if (!emailFormat.test(emailInput.value.trim())) {
-    emailInput.classList.add("error-input");
+  if (!emailFormat.test(input.value.trim())) {
+    input.classList.add("error-input");
     errorText.classList.remove("hidden");
     errorText.innerHTML = "Please provide a valid email address";
     

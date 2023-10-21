@@ -36,11 +36,6 @@ img {
   max-width: 100%;
 }
 
-::placeholder {
-  color: var(--clr-primary-200);
-  opacity: 1;
-}
-
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -53,18 +48,6 @@ img {
 
 .hidden {
   display: none !important;
-}
-
-.error-text {
-  margin: 0.5rem 0 1rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  font-style: italic;
-  color: var(--clr-secondary-400);
-}
-
-.error-input {
-  outline-color: var(--clr-secondary-400) !important;
 }
 
 .logo-img {
@@ -96,7 +79,7 @@ header p {
   padding: 0 1.5rem;
 }
 
-.email-input, 
+.input,
 .button {
   width: 100%;
   padding: 0.75rem 2rem;
@@ -106,13 +89,30 @@ header p {
   border: none;
 }
 
-.email-input {
+.input {
   outline: 0.063rem solid var(--clr-primary-200);
   color: var(--clr-neutral-800);
 }
 
-.email-input:focus {
+.input::placeholder {
+  color: var(--clr-primary-200);
+  opacity: 1;
+}
+
+.input:focus {
   outline-width: 0.125rem;
+}
+
+.error-input {
+  outline-color: var(--clr-secondary-400) !important;
+}
+
+.error-text {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--clr-secondary-400);
 }
 
 .button {
@@ -122,7 +122,6 @@ header p {
   font-weight: 600;
   color: var(--clr-neutral-100);
   cursor: pointer;
-  outline: none;
 }
 
 .button:focus-visible, 
@@ -198,13 +197,13 @@ footer p {
     margin-top: 2.5rem;
   }
   
-  .email-input, 
+  .input,
   .button {
     padding: 1rem 2rem;
     font-size: 1rem;
   }
   
-  .email-input {
+  .input {
     grid-area: cell-1;
   }
   
